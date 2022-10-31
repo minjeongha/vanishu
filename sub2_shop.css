@@ -1,0 +1,792 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #140e0b;}
+body{
+    background-color: #fffbf5;
+    font-family: 'Pretendard';
+    line-height: 24px;
+    font-size: 14px;
+    color: #140e0b;
+    min-width: 1320px; /*줄였을때 잘리지않게*/
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=179805), auto;
+}
+a{
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=179810), auto;
+}
+
+/* 웹폰트 */
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: local('Pretendard Variable'), url('./images/PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 헤더 */
+#top{
+    height: 30px;
+    background-color: rgb(2, 85, 84);
+}
+.header_bordertop{    
+    height: 10px;
+    background-color: rgb(217, 237, 230);    
+    border-bottom: 1px solid  rgb(2, 85, 84);
+}
+.header_borderbottom{
+    height: 10px;
+    background-color: rgb(217, 237, 230);    
+    border-top: 1px solid  rgb(2, 85, 84);
+    border-bottom: 1px solid  rgb(2, 85, 84);
+}
+
+#header{
+    position: relative;
+    /* height: 182px; */
+    background-color: rgb(217, 237, 230);
+
+}
+.header_inner{    
+    width: 1320px;
+    height: 162px;
+    margin: 0 auto;    
+    padding: 24px 0;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbox{
+    width: 330px;
+    height: 130px;
+    position: relative;
+    box-sizing: border-box;    
+}
+.search{
+    display: inline-block;
+    margin-left: 30px;
+    box-sizing: border-box;
+    padding: 0 40px 0 20px;
+    position: absolute;
+}
+.search_icon{
+    position: absolute;
+    right: 15%;
+    top:8%;
+}
+
+/* search 꾸미기 */
+.header_inner input{
+    display: inline-block;
+    height: 44px;
+    width: 260px;
+    background-color: #f5fefb;
+    border: rgb(2, 85, 84) 1px solid;
+}
+/* search x표시 없애기 */
+/* IE의 경우 */
+input::-ms-clear,
+input::-ms-reveal{
+    display:none;
+}
+/* 크롬의 경우 */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+    display:none;
+}
+/*search 검정선 없애기(크롬)*/
+input:focus, select:focus, option:focus, textarea:focus, button:focus{
+	outline: none;
+}
+.mainlogobox{            
+    width: 658px;
+    height: 130px;
+    text-align: center;
+    border-left: rgb(2, 85, 84) 1px solid;
+    border-right: rgb(2, 85, 84) 1px solid;
+    box-sizing: border-box;
+}
+.mainlogobox img{
+    display: inline-block;
+    margin-top: 30px;
+}            
+
+.loginbox{
+    width: 330px;
+    height: 130px;
+    float: right;    
+    vertical-align: text-top;
+}
+.loginbox a{
+    float: left;
+    margin-left: 30px;
+    display: inline-block;
+    color: rgb(2, 85, 84);
+
+}
+.loginbox a:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.cart_hoverbox{
+    position: relative;  
+    height: 18px;
+    width: 18px;
+}
+.header_carthover{
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    opacity: 0;   
+}
+.cart_hoverbox:hover .header_carthover{
+    opacity: 1;
+}
+.like_hoverbox{
+    position: relative;  
+    height: 18px;
+    width: 18px;
+}
+.header_likehover{
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    opacity: 0;   
+}
+.like_hoverbox:hover .header_likehover{
+    opacity: 1;
+}
+
+
+/* nav */
+#nav{
+    width: 100%;
+    height: 64px;
+    background-color: #a8c6bd;
+    border-bottom: 1px solid  rgb(2, 85, 84);
+}
+.nav_inner{
+    margin: 0 auto;
+    width: 1320px;
+    height: 64px;
+
+}
+.nav_inner > ul > li{
+    float: left;
+    text-align: center;
+
+
+}
+.nav_inner > ul > li > a{   
+    width: 330px; 
+    padding: 20px 0;
+    display: inline-block;
+    color: #025554;    
+    font-size: 22px;
+    border-right: rgb(2, 85, 84) 1px solid;
+    box-sizing: border-box;
+}
+
+.nav_inner > ul > li:nth-child(1) > a{   
+    border-left: rgb(2, 85, 84) 1px solid;
+
+}
+.nav_inner > ul > li:hover > a{
+    background-color: #caae86;
+}
+
+
+
+
+/* 서브메뉴 */
+.sub{
+    left: 0;
+    width: 100%;
+    height: 300px;
+    position: absolute; /*nav가 기준*/ 
+    background-color: rgba(202, 174, 134, 0.5);
+    display: none;
+    z-index: 99;
+}
+.sub_inner{
+    width: 1320px;
+    margin: 0 auto;
+
+}
+.sub_inner ul{
+    padding-top: 40px;
+    float: left;
+    width: 329px;
+}
+.sub_inner ul li{
+    padding-bottom: 20px;
+}
+.sub_inner ul li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+.sub_inner ul li a:hover{
+    color: #5e4230;
+}
+/* 배너 */
+#banner {
+    height: 300px;
+    margin: 0 auto;
+    background: url(../images/banner_shop.png) no-repeat center top;
+}
+
+#banner h1{
+    font-size: 80px;
+    font-weight: 500;
+    color: #caae86;
+    top: 138px;
+    left: 833px;    
+    padding: 138px;
+    text-align: center;
+}
+/* NOTICE */
+.border_top{
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid  #caae86;
+}
+.border_bottom{
+    height: 10px;
+    width: 100%;
+    border-top: 1px solid  #caae86;
+    border-bottom: 1px solid  #caae86;
+}
+/* 탭메뉴 꾸미기 */
+
+.tab {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;    
+    width: 100%; 
+}
+
+.tabnav {
+    width: 910px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tabnav_box {
+    padding: 17px 0;
+    width: 1320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-left: 1px solid #caae86;
+    border-right: 1px solid #caae86;
+    
+}
+
+.tabnav li {
+
+    float: left;
+}
+.tabnav li img{
+    padding: 30px 0 15px 0;
+}
+
+.tabnav li a {
+    width: 120px;
+    height: 120px;
+    margin: 0 30px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    border: 1px solid #caae86;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.tabnav li:first-child a {
+    background: url(../images/shop_icon_sugar.png) no-repeat center 20px;
+}
+.tabnav li:nth-child(2) a {
+    background: url(../images/shop_icon_bakery.png) no-repeat center 20px;
+}
+.tabnav li:nth-child(3) a {
+    background: url(../images/shop_icon_juice.png) no-repeat center 20px;
+}
+.tabnav li:nth-child(4) a {
+    background: url(../images/shop_icon_ice.png) no-repeat center 20px;
+}
+.tabnav li:nth-child(5) a {
+    background: url(../images/shop_icon_etc.png) no-repeat center 20px;
+}
+
+  /* 탭메뉴 클릭했을 때 변화 꾸미기 */
+  .tabnav li a:hover {
+      color: #fff;
+      font-weight: 500;
+  }
+
+  .tabnav li a.active {
+      color: #fff;
+      font-weight: 500;
+  }
+
+  .tabnav li:first-child a:hover {
+      background: #5e4230 url(../images/shop_icon_sugar_hover.png) no-repeat center 20px;
+      transition: 0.3s;
+      color: #fff;
+      font-weight: 500;
+  }
+
+  .tabnav li:first-child a.active {
+      background: #5e4230 url(../images/shop_icon_sugar_hover.png) no-repeat center 20px;
+      color: #fff;
+      font-weight: 500;
+  }
+
+  .tabnav li:nth-child(2) a:hover {
+      background: #5e4230 url(../images/shop_icon_bakery_hover.png) no-repeat center 20px;
+      transition: 0.3s;
+  }
+
+  .tabnav li:nth-child(2) a.active {
+      background: #5e4230 url(../images/shop_icon_bakery_hover.png) no-repeat center 20px;
+      color: #fff;
+  }
+
+  .tabnav li:nth-child(3) a:hover {
+      background: #5e4230 url(../images/shop_icon_juice_hover.png) no-repeat center 20px;
+      transition: 0.3s;
+  }
+
+  .tabnav li:nth-child(3) a.active {
+      background: #5e4230 url(../images/shop_icon_juice_hover.png) no-repeat center 20px;
+      color: #fff;
+  }
+
+  .tabnav li:nth-child(4) a:hover {
+      background: #5e4230 url(../images/shop_icon_ice_hover.png) no-repeat center 20px;
+      transition: 0.3s;
+  }
+
+  .tabnav li:nth-child(4) a.active {
+      background: #5e4230 url(../images/shop_icon_ice_hover.png) no-repeat center 20px;
+      color: #fff;
+  }
+
+  .tabnav li:nth-child(5) a:hover {
+      background: #5e4230 url(../images/shop_icon_etc_hover.png) no-repeat center 20px;
+      transition: 0.3s;
+  }
+
+  .tabnav li:nth-child(5) a.active {
+      background: #5e4230 url(../images/shop_icon_etc_hover.png) no-repeat center 20px;
+      color: #fff;
+  }
+  
+  
+  /* 탭컨텐츠 꾸미기 */
+  .tabcontent {
+      margin: 100px auto;
+      width: 1320px;
+      /* height: 3500px; */
+      padding-bottom: 100px;
+      position: relative;
+  }
+
+  .tab_title {
+      margin-top: 50px;
+      margin-left: 50px;
+      font-size: 36px;
+      font-weight: 500;
+  }
+  /* tab01 */
+  #tab01 .new_product:nth-child(1) .new_image{
+    background: #caae86 url(../images/shop_etc1.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(2) .new_image{
+    background: #caae86 url(../images/shop_etc2.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(3) .new_image{
+    background: #caae86 url(../images/shop_etc3.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(4) .new_image{
+    background: #caae86 url(../images/shop_etc4.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(5) .new_image{
+    background: #caae86 url(../images/shop_etc5.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(6) .new_image{
+    background: #caae86 url(../images/shop_etc6.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(7) .new_image{
+    background: #caae86 url(../images/shop_ice1.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(8) .new_image{
+    background: #caae86 url(../images/shop_drink_orange.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(9) .new_image{
+    background: #caae86 url(../images/shop_drink_mango.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(10) .new_image{
+    background: #caae86 url(../images/shop_drink_muscat.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(11) .new_image{
+    background: #caae86 url(../images/shop_bakery1.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(12) .new_image{
+    background: #caae86 url(../images/shop_bakery2.png) no-repeat 0 0;
+  }
+  #tab01 .new_product:nth-child(13) .new_image{
+    background: #caae86 url(../images/shop_bakery3.png) no-repeat 0 0;
+  }
+/* tab02 */
+  #tab02 .new_product:nth-child(1) .new_image{
+    background: #caae86 url(../images/shop_bakery1.png) no-repeat 0 0;
+  }
+  #tab02 .new_product:nth-child(2) .new_image{
+    background: #caae86 url(../images/shop_bakery2.png) no-repeat 0 0;
+  }
+  #tab02 .new_product:nth-child(3) .new_image{
+    background: #caae86 url(../images/shop_bakery3.png) no-repeat 0 0;
+  }
+/* tab05 */
+  #tab05 .new_product:nth-child(1) .new_image{
+    background: #caae86 url(../images/shop_etc1.png) no-repeat 0 0;
+  }
+  #tab05 .new_product:nth-child(2) .new_image{
+    background: #caae86 url(../images/shop_etc2.png) no-repeat 0 0;
+  }
+  #tab05 .new_product:nth-child(3) .new_image{
+    background: #caae86 url(../images/shop_etc3.png) no-repeat 0 0;
+  }
+  /* tab03 */
+  #tab03 .new_product:nth-child(1) .new_image{
+    background: #caae86 url(../images/shop_drink_orange.png) no-repeat 0 0;
+  }
+  #tab03 .new_product:nth-child(2) .new_image{
+    background: #caae86 url(../images/shop_drink_mango.png) no-repeat 0 0;
+  }
+  #tab03 .new_product:nth-child(3) .new_image{
+    background: #caae86 url(../images/shop_drink_muscat.png) no-repeat 0 0;
+  }
+    /* tab04 */
+  #tab04 .new_product:nth-child(1) .new_image{
+    background: #caae86 url(../images/shop_ice1.png) no-repeat 0 0;
+  }
+  #tab04 .new_product:nth-child(2) .new_image{
+    background: #caae86 url(../images/shop_drink_mango.png) no-repeat 0 0;
+  }
+  #tab04 .new_product:nth-child(3) .new_image{
+    background: #caae86 url(../images/shop_drink_muscat.png) no-repeat 0 0;
+  }
+      /* tab05 */
+  #tab05 .new_product:nth-child(1) .new_image{
+    background: #caae86 url(../images/shop_etc1.png) no-repeat 0 0;
+  }
+  #tab05 .new_product:nth-child(2) .new_image{
+    background: #caae86 url(../images/shop_etc2.png) no-repeat 0 0;
+  }
+  #tab05 .new_product:nth-child(3) .new_image{
+    background: #caae86 url(../images/shop_etc3.png) no-repeat 0 0;
+  }
+  #tab05 .new_product:nth-child(4) .new_image{
+    background: #caae86 url(../images/shop_etc4.png) no-repeat 0 0;
+  }
+  #tab05 .new_product:nth-child(5) .new_image{
+    background: #caae86 url(../images/shop_etc5.png) no-repeat 0 0;
+  }
+  #tab05 .new_product:nth-child(6) .new_image{
+    background: #caae86 url(../images/shop_etc6.png) no-repeat 0 0;
+  }
+  /* NEW */
+.new_content{
+    width: 1100px;
+    margin: 50px auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.new_image{
+    margin-top: 80px;
+    position: relative;
+    width: 300px;
+    height: 370px;
+    border-radius: 175px 175px 0 0;
+    border: 3px solid #f8e8d4;
+    
+}
+.new_like{
+    padding-bottom: 10px;
+}
+.new_iconbox {
+    width: 26px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    text-align: center;
+    /*박스를 다 꾸미고 투명하게 만든다. display:none은 안됨!!*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+.new_image:hover .new_iconbox{
+    opacity: 1;
+
+}
+.new_image:hover{
+    border: 3px solid #025554;
+}
+
+.new_text{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: none;
+}
+.new_text p{
+    font-size: 14px;
+    vertical-align: bottom;
+}
+.new_text > a{
+    font-size: 16px;
+}
+
+.new_text hr{
+    height:1px;
+    width: 100%;
+    border: 0;
+    background-color: #140e0b;
+    margin: 5px 0;
+}
+.new_button{
+    display: inline-block;
+    width: 60px;
+    background-color: #76a397;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 7px;
+    color: #fff;
+}
+
+/* 버블버튼 */
+.buy_button_box{
+    text-align: center;
+}
+.buy_button{
+    text-decoration: none;
+    color: #025554;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #025554;
+    display: inline-block;
+    padding: 3px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    position: relative; /*버블의 기준*/
+    overflow: hidden; /*버튼 밖에 요소 안보이게 만들어줌*/
+    transition: color 0.5s;
+}
+
+/* 버블만들기 */
+.buy_button span{
+    display: inline-block;
+    width: 25%;/*100% 나누기 버블갯수만큼*/
+    height: 100%;
+    background-color: #025554;
+    position: absolute;
+    top: 110%;
+    border-radius: 50%; /*원형으로 만들기*/
+    transition: all 0.7s; /*서서히 변하게 만들기*/
+    z-index: -1; /*글자 뒤로 버블 보내기*/
+
+}
+.buy_button span:nth-child(1){
+    left: 0;
+    transition-delay: 0s; /*트랜지션 딜레이*/
+}
+.buy_button span:nth-child(2){
+    left: 30%;
+    transition-delay: 0.2s;
+}
+.buy_button span:nth-child(3){
+    left: 60%;
+    transition-delay: 0.4s;
+}
+.buy_button span:nth-child(4){
+    left: 90%;
+    transition-delay: 0.6s;
+}
+/* 호버효과 */
+.buy_button:hover{
+    color: #fff; /*글자색 먼저 바꾸기*/
+
+}
+.buy_button:hover span{
+    transform: scale(2, 1.6);
+    top: 0;
+}
+
+/* footer */
+#footer{
+    width: 100%;
+    height: 294px;
+}
+.footer_bordertop{    
+    height: 10px;
+    background-color: rgb(217, 237, 230);    
+    border-top: 1px solid  rgb(2, 85, 84);
+    border-bottom: 1px solid  rgb(2, 85, 84);
+}
+.footer_borderbottom{
+    height: 10px;
+    background-color: rgb(217, 237, 230);    
+    border-top: 1px solid  rgb(2, 85, 84);
+    border-bottom: 1px solid  rgb(2, 85, 84);
+}
+.footerbox{    
+    height: 270px;
+    background-color: rgb(217, 237, 230);
+    box-sizing: border-box;
+
+}
+.footerbox_inner{
+    background-color: rgb(217, 237, 230);
+    width: 1320px;
+    height: 180px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 45px 0;
+}
+.footer_left{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.footer_left a{
+    display: block;
+    color: #caae86;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.footer_left a:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+
+}
+
+.footer_center{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #caae86;
+    font-weight: 300;
+}
+.footer_right{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.footer_right h1{
+    color: #025554;
+    font-size: 32px;
+    font-weight: 700;
+}
+.footer_right h2{
+    color: #76a397;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.footer_right p a{
+    padding: 0 4px;
+}
+.footer_right p a:hover{
+    opacity: 0.6;
+}
