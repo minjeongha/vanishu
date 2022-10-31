@@ -136,7 +136,7 @@ a{
 .search_icon{
     position: absolute;
     right: 15%;
-    top:6%;
+    top:8%;
 }
 
 /* search 꾸미기 */
@@ -671,7 +671,8 @@ th, td{
     font-size: 20px;
     text-align: center;
     border-radius: 50px;
-    font-weight: 600;
+    font-weight: 500;
+    color: #fff;
 }
 .delivery_process img{
     display: block;
@@ -710,8 +711,14 @@ th, td{
     background: url(../images/cross.png) no-repeat 20px 20px, #fff url(../images/cross.png) no-repeat 330px 105px;
 }
 
-.delivery_product div img{
+.delivery_product div:nth-child(1) img{
     padding-top: 45px;
+}
+.delivery_product div:nth-child(2) img{
+    padding-top: 100px;
+}
+.delivery_product div:nth-child(3) img{
+    padding-top: 80px;
 }
 .delivery_product h2{
     font-size: 30px;

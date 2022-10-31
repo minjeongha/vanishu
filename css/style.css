@@ -136,7 +136,7 @@ a{
 .search_icon{
     position: absolute;
     right: 15%;
-    top:6%;
+    top:8%;
 }
 
 /* search 꾸미기 */
@@ -357,12 +357,12 @@ left: -600px;}/* 블릿버튼 위치 */
 }
 .best_inner h1{
     font-family: 'GmarketSansMedium';
-    font-size: 36px;
+    font-size: 34px;
     vertical-align: middle;
     padding-bottom: 30px;
 }
 .best_inner p{
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .best_product{
@@ -377,8 +377,7 @@ left: -600px;}/* 블릿버튼 위치 */
     padding: 0 21px;
 }
 .best_product a img{
-    transition: all 0.7s;
-    border: 1px solid #caae86;
+    transition: all 0.5s;
     border-radius: 50%;
 }
 .best_product a:hover img, .best_product a h2:hover img{
@@ -387,8 +386,8 @@ left: -600px;}/* 블릿버튼 위치 */
 
 .best_product a h2{
     position: relative;/*밑줄 기준*/
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     padding: 20px 0;
     margin-bottom: 90px;
 }
@@ -402,7 +401,7 @@ left: -600px;}/* 블릿버튼 위치 */
     bottom: 0;
     transform: scaleX(0);/*밑줄 길이 없애기*/
     transform-origin: center;/*밑줄 길이의 기준점을 중앙으로 두기*/
-    transition: all 1s;
+    transition: all 0.7s;
 }
 .best_product a:hover span{
     transform: scaleX(1);/*밑줄 길이 나타나게 만들기*/
@@ -433,7 +432,7 @@ left: -600px;}/* 블릿버튼 위치 */
     left: 10%;
     font-size: 20px;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 34px;
     color: #5e4230;
 }
 .textbox p span{
@@ -504,12 +503,12 @@ left: -600px;}/* 블릿버튼 위치 */
 }
 .members_title h1{
     font-family: 'GmarketSansMedium';
-    font-size: 36px;
+    font-size: 34px;
     vertical-align: middle;
     padding-bottom: 30px;
 }
 .members_title p{
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .members_content{
@@ -580,10 +579,9 @@ left: -600px;}/* 블릿버튼 위치 */
 .morebox:hover .arrow{
     transform: translate(20px, 0);
 }
-.morebox:hover .morebox{
-    color: rgba(94, 66, 48, 0.3);
+.morebox:hover{
+    color: rgba(94, 66, 48, 0.5);
 }
-
 
 
 .regular{
